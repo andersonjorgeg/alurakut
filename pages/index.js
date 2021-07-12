@@ -3,11 +3,6 @@ import Box from '../src/components/Box';
 import { ProfileRelationsBoxWrapper } from '../src/components/ProfileRelations';
 import { AlurakutMenu, OrkutNostalgicIconSet } from '../src/lib/AlurakutCommons';
 
-/* const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-` */
-
 function ProfileSidebar(props){
   /* console.log(props) */
   return (
@@ -38,7 +33,7 @@ export default function Home() {
         <div className="welcomeArea" style={{ gridArea:'welcomeArea' }}>
           <Box>
             <h1 className="title">
-              Bem vindo(a)
+              Bem vindo(a) {usuarioAleatorio}
             </h1>
 
             <OrkutNostalgicIconSet/>
