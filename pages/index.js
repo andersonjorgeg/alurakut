@@ -1,6 +1,7 @@
 import React from 'react';
 import MainGrid from '../src/components/MainGrid';
 import Box from '../src/components/Box';
+import ComunidadesDefault from '../src/components/ComunidadesDefault';
 import { ProfileRelationsBoxWrapper } from '../src/components/ProfileRelations';
 import { AlurakutMenu, AlurakutProfileSidebarMenuDefault, OrkutNostalgicIconSet } from '../src/lib/AlurakutCommons';
 
@@ -23,11 +24,8 @@ function ProfileSidebar({githubUser}){
 }
 
 export default function Home() {
-  const [comunidades, setComunidades] = React.useState([{
-    id: '2643172521784725471527217427',
-    title: 'Eu odeio acordar cedo',
-    image: 'https://img10.orkut.br.com/community/52cc4290facd7fa700b897d8a1dc80aa.jpg',
-  }]);  
+  const [comunidades, setComunidades] = React.useState([...ComunidadesDefault]); 
+  console.log(ComunidadesDefault);
   const usuarioAleatorio = 'andersonjorgeg';
   const pessoasFavoritas = [
     'juunegreiros', 
@@ -35,7 +33,8 @@ export default function Home() {
     'peas', 
     'rafaballerini', 
     'marcobrunodev',
-    'felipefialho'
+    'felipefialho',
+    'dannylbr'
   ]
 
   return (
