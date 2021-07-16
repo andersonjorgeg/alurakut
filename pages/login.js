@@ -5,6 +5,7 @@ import nookies from 'nookies';
 
 export default function LoginScreen() {
   const router = useRouter();
+  
   const [githubUser, setGithubUser] = React.useState('');
 
   return (
