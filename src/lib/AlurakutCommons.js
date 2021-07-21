@@ -361,8 +361,8 @@ const AlurakutLoginScreen = css`
     }
     .logoArea {
       grid-area: logoArea;
-      background-color: var(--backgroundTertiary);
-      border-radius: var(--commonRadius);
+      background-color: white;
+      border-radius: 8px;
       padding: var(--gutter);
       text-align: center;
       display: flex;
@@ -381,7 +381,7 @@ const AlurakutLoginScreen = css`
           margin-bottom: 12px;
         }
         strong {
-          color: var(--colorQuarternary);
+          color: #D81D99;
         }
       }
       img {
@@ -403,8 +403,8 @@ const AlurakutLoginScreen = css`
         padding: var(--gutter);
         padding-left: 50px;
         padding-right: 50px;
-        background-color: var(--backgroundSecondary);
-        border-radius: var(--commonRadius);
+        background-color: hsl(208, 87%, 97%);
+        border-radius: 8px;
         flex: 1;
         &:not(:last-child) {
           margin-bottom: var(--gap);
@@ -420,15 +420,15 @@ const AlurakutLoginScreen = css`
         }
         a {
           text-decoration: none;
-          color: var(--colorPrimary);
+          color: #2E7BB4;
         }
         input {
           width: 100%;
           display: block;
-          border: 1px solid var(--textQuarternaryColor);
+          border: 1px solid hsl(63, 17%, 47%);
           padding: 12px;
-          background-color: var(--backgroundTertiary);
-          border-radius: var(--commonRadius);
+          background-color: white;
+          border-radius: 8px;
           margin-top: 24px;
           margin-bottom: 16px;
         }
@@ -437,23 +437,23 @@ const AlurakutLoginScreen = css`
           display: block;
           border: 0;
           padding: 12px;
-          border-radius: var(--commonRadius);
-          background-color: var(--colorPrimary);
-          color: var(--textSecondaryColor);
+          border-radius: 8px;
+          background-color: hsl(205, 59%, 44%);
+          color: white;
         }
       }
     }
     .footerArea {
       grid-area: footerArea;
-      background-color: var(--backgroundQuarternary);
-      border-radius: var(--commonRadius);
+      background-color: hsl(208, 87%, 97%);
+      border-radius: 8px;
       padding: 8px;
       p {
         font-size: 12px;
         text-align: center;
         a {
           text-decoration: none;
-          color: var(--colorPrimary);
+          color: #2E7BB4;
         }
       }
     }
